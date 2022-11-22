@@ -1,2 +1,21 @@
 /* font-family: 'Raleway', sans-serif;*/
 /* family: 'Roboto', sans-serif; */
+:root{
+    --main-color: "212121";
+}
+body {
+    font-family: 'Roboto'; sans-serfif; 
+    color: var (--main-color);
+}
+.logo {
+font-family: 'Raleway'; sans-serfif;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+text-decoration: none;
+letter-spacing: 0.03em;
+color: #000;
+}
+.logo-web {
+    color: #2196F3; 
+}
