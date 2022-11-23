@@ -13,9 +13,9 @@ body {
     color: var(--main-color);
 }
 
-/* Nagłówek makiety i logo w footer*/
+/* Nagłówek makiety */
 
-.header-logo, .logo-web, .footer-logo {
+.header-logo, .logo-web {
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
@@ -26,9 +26,6 @@ color: var(--logo-color);
 }
 .logo-web {
 color: var(--higlight-color); 
-}
-.footer-logo {
-color: var(--logo-footer-color);
 }
 .header-address, .header-phone {
     font-weight: 500;
@@ -46,7 +43,7 @@ text-decoration: underline;
 
 /* Menu makiety */
 
-.nav-list, .nav-list-item-link {
+.nav-list a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -63,6 +60,8 @@ text-decoration: underline;
 
 .main-section {
     background-color: var(--background-color);
+}
+.main-section h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -86,7 +85,7 @@ color: var(--logo-footer-color);
 
 /* Nasze atuty*/
 
-.trumps {
+.trumps h2 {
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -95,14 +94,13 @@ text-transform: uppercase;
 color: var(--main-color);
 }
 .trumps-item {
-font-weight: 400;
 line-height: 1.71;
 color: var(--support-color);
 }
 
 /* Czym sie zajmujemy  i nagłówek do Nasz zespół */
 
-.works, .team {
+.works h2, .team {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -132,8 +130,39 @@ font-weight: 400;
 color: var(--support-color);
 }
 
+/* Portfolio filters */
+
+/* Portfolio projects */
+
+.projects-img {
+background: var(--logo-footer-color);
+}
+.projects-img-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--main-color); 
+}
+.projects-img-descrip {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--support-color);
+}
+
 /* Footer */
 
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--logo-footer-color);
+    }
 .footer-color {
 background-color: var(--background-color);
 }
