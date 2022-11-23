@@ -12,8 +12,11 @@ body {
     font-family: 'Roboto', sans-serfif;
     color: var(--main-color);
 }
+
+/* Nagłówek makiety i logo w footer*/
+
 .header-logo, .logo-web, .footer-logo {
-font-family: 'Raleway', sans-serfif;
+font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -40,6 +43,9 @@ color: var(--logo-footer-color);
 color: var(--higlight-color);
 text-decoration: underline;
 }
+
+/* Menu makiety */
+
 .nav-list, .nav-list-item-link {
     font-weight: 500;
     font-size: 14px;
@@ -52,17 +58,18 @@ text-decoration: underline;
     color: var(--higlight-color);
     text-decoration: underline;
 }
-.main-title {
+
+/* Header makiety */
+
+.main-section {
     background-color: var(--background-color);
-}
-.main-title-text {
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--logo-footer-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--logo-footer-color);
 }
 .main-button {
 background: var(--higlight-color);
@@ -73,10 +80,60 @@ font-size: 16px;
 line-height: 1.88;
 display: flex;
 align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 color: var(--logo-footer-color);
 }
+
+/* Nasze atuty*/
+
+.trumps {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-color);
+}
+.trumps-item {
+font-weight: 400;
+line-height: 1.71;
+color: var(--support-color);
+}
+
+/* Czym sie zajmujemy  i nagłówek do Nasz zespół */
+
+.works, .team {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+/* Nasz zespół */
+
+.team-img {
+background: var(--logo-footer-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.team-img-descrip {
+font-weight: 400;
+color: var(--support-color);
+}
+
+/* Footer */
+
 .footer-color {
 background-color: var(--background-color);
 }
@@ -96,7 +153,7 @@ background-color: var(--background-color);
 }
 .footer-address-link:hover, .footer-phone-link:hover,
 .footer-address-link:focus, .footer-phone-link:focus,
-.footer-address-link-u:hover,.footer-address-link-u:focus {
+.footer-address-link-u:hover, .footer-address-link-u:focus {
 color: var(--higlight-color);
 text-decoration: underline;
 }
