@@ -7,6 +7,7 @@
     --footer-link-color: #FFFFFF 60%;
     --background-color: #2F303A;
     --box-shadow-color: rgba(0, 0, 0, 0.15);
+    --team-color: #F5F4FA;
 }
 body {
     font-family: 'Roboto', sans-serfif;
@@ -46,7 +47,7 @@ text-decoration: underline;
 
 /* Menu makiety */
 
-.nav-list a {
+.nav-list {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -62,11 +63,11 @@ text-decoration: underline;
 
 /* Header makiety */
 
-.main-section {
+.title {
     background-color: var(--background-color);
 }
 
-.main-section h1 {
+.title h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -75,39 +76,37 @@ text-decoration: underline;
     text-transform: uppercase;
     color: var(--white-color);
 }
-
-.main-button {
+.title-button {
 background: var(--higlight-color);
 box-shadow: 0px 4px 4px var(--box-shadow-color);
 border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
-align-items: center;
 letter-spacing: 0.06em;
 color: var(--white-color);
 }
 
 /* Nasze atuty*/
 
-.trumps h2 {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--main-color);
+.trumps-title h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    color: var(--main-color);
 }
 
-.trumps-item {
+.trumps-title p {
+font-weight: 400;
 line-height: 1.71;
 color: var(--support-color);
 }
 
-/* Czym sie zajmujemy  i nagłówek do Nasz zespół */
+/* Czym sie zajmujemy  i nagłówek z Nasz zespół */
 
-.works h2, .team {
+.works h2, .team h2 {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -118,22 +117,24 @@ color: var(--main-color);
 
 /* Nasz zespół */
 
-.team-img {
-background: var(--white-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-color);
+.team {
+    background: var(--team-color);
 }
 
-.team-img-descrip {
-font-weight: 400;
+.team-card {
+    background: var(--white-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-card-text h3 {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.team-card-text p {
 color: var(--support-color);
 }
 
