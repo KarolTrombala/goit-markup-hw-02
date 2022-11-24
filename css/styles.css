@@ -135,10 +135,26 @@ color: var(--main-color);
 }
 
 .team-card-text p {
+    font-weight: 400;
 color: var(--support-color);
 }
 
 /* Portfolio filters */
+
+.filter-button {
+font-family: 'Roboto'; /* dodane bo podmieniało na inną - Arial */
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+background: var(--team-color);
+}
+
+.filter-button:hover, .filter-button:focus {
+    background: var(--higlight-color);
+    color: var(--white-color);
+}
 
 /* Portfolio projects */
 
@@ -146,14 +162,14 @@ color: var(--support-color);
 background: var(--white-color);
 }
 
-.projects-img-name {
+.projects-title h3{
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--main-color); 
 }
-.projects-img-descrip {
+.projects-title p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -178,6 +194,7 @@ background-color: var(--background-color);
 }
 
 .footer-address {
+    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.171;
