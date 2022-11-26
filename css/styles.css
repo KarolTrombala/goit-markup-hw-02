@@ -9,6 +9,7 @@
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --team-color: #f5f4fa;
 }
+
 body {
   font-family: "Roboto", sans-serfif;
   color: var(--main-color);
@@ -51,7 +52,11 @@ body {
 
 /* Menu makiety */
 
-.nav-list {
+.list {
+  list-style-type: none;
+}
+
+.nav-list-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,11 +73,11 @@ body {
 
 /* Header makiety */
 
-.title {
+.hero {
   background-color: var(--background-color);
 }
 
-.title h1 {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -82,7 +87,7 @@ body {
   color: var(--white-color);
 }
 
-.title-button {
+.hero-button {
   background: var(--higlight-color);
   box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
@@ -91,11 +96,12 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  cursor: pointer;
 }
 
 /* Nasze atuty*/
 
-.trumps-title h2 {
+.trumps-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -104,16 +110,18 @@ body {
   color: var(--main-color);
 }
 
-.trumps-title p {
+.trumps-item {
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--support-color);
 }
 
 /* Czym sie zajmujemy  i nagłówek z Nasz zespół */
 
-.works h2,
-.team h2 {
+.works-title,
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -130,32 +138,38 @@ body {
 
 .team-card {
   background: var(--white-color);
+}
+
+.team-card-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.team-card-text h3 {
-  font-weight: 500;
   color: var(--main-color);
 }
 
-.team-card-text p {
+.team-card-text {
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--support-color);
 }
 
 /* Portfolio filters */
 
 .filter-button {
-  font-family: "Roboto"; /* dodane bo podmieniało na inną - Arial */
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
   background: var(--team-color);
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -166,11 +180,12 @@ body {
 
 /* Portfolio projects */
 
-.projects-img {
+.project-card {
   background: var(--white-color);
 }
 
-.projects-title h3 {
+.project-card-title {
+  font-style: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -178,7 +193,8 @@ body {
   color: var(--main-color);
 }
 
-.projects-title p {
+.project-card-text {
+  font-style: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
